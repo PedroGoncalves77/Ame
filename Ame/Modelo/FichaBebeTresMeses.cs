@@ -10,10 +10,9 @@ namespace Ame.Modelo
     {
         public FichaBebeTresMeses(string nome_Mae, 
             string profissao_Mae, string nome_Pai, string profissao_Pai, 
-            string endereco, string nome_Crianca, int idade_Crianca, 
-            string nome_Pediatra)
+            string endereco, string nome_Crianca, double idade_Crianca,string nome_Pediatra)
         {
-
+            
             Nome_Mae = nome_Mae;
             Profissao_Mae = profissao_Mae;
             Nome_Pai = nome_Pai;
@@ -25,16 +24,16 @@ namespace Ame.Modelo
         }
 
         public int Id { get; set; }
-        //public int Contrato { get; set; }
-        //public DateTime Data { get; set; }
+        public int Contrato { get; set; }
+        public DateTime Data { get; set; }
         public string Nome_Mae { get; set; }
         public string Profissao_Mae { get; set; }
         public string Nome_Pai { get; set; }
         public string Profissao_Pai { get; set; }
         public string Endereco { get; set; }
         public string Nome_Crianca { get; set; }
-        public int Idade_Crianca { get; set; }
-        //public DateTime Data_Nascimento { get; set; }
+        public double Idade_Crianca { get; set; }
+        public DateTime Data_Nascimento { get; set; }
         public string Nome_Pediatra { get; set; }
 
 

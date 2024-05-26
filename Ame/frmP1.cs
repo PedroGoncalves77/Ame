@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Ame.BD;
+using Ame.Modelo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,13 +14,16 @@ namespace Ame
 {
     public partial class frmP1 : Form
     {
-        public frmP1()
+        public frmP1(FichaBebeTresMeses ficha)
         {
             InitializeComponent();
+            this.Ficha = ficha;
+            
         }
 
         private void frm_P1_Load(object sender, EventArgs e)
         {
+            
 
         }
 

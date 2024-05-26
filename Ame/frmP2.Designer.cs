@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP2
     {
@@ -117,5 +119,6 @@
         private Label lbl_3;
         private Button bt_anterior;
         private TextBox txt_3;
+        private FichaBebeTresMeses Ficha;
     }
 }

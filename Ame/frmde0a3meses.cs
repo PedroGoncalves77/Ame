@@ -25,28 +25,39 @@ namespace Ame
         {
 
             using BD_Context context = new BD_Context();
-            var fichaBebeDAL = new FichaBebeTresMesesDAL(context);
-            fichaBebeDAL.Adicionar(CriarFicha());
+            var fichaBebeDAL = new DAL<FichaBebeTresMeses>(context);
 
+            List<String> listaTxb = new List<String>() {txb_endereco.Text, txb_idadeCrianca.Text, txb_nomeMae.Text, txb_nomePai.Text,
+                txb_pediatra.Text, txb_profissaoPai.Text, txb_profissaoMae.Text, this.mtc_Data.SelectionRange.Start.ToString(),
+                this.mtc_Nascimento.SelectionRange.Start.ToString() };
+            if (!Consulta.Consultar(listaTxb))
+            {
+                var ficha = CriarFicha();
+                fichaBebeDAL.Adicionar(ficha);
+                frmP1 p1 = new frmP1(ficha!);
+                p1.ShowDialog();
+                this.Dispose();
+            }
+            else
+                MessageBox.Show("Preencha todos os campos", "Aviso!");
 
-
-            frmP1 p1 = new frmP1();
-            p1.ShowDialog();
-            this.Dispose();
 
         }
         public FichaBebeTresMeses CriarFicha()
         {
+            DateTime data = this.mtc_Data.SelectionRange.Start;
+            DateTime nascimeno = this.mtc_Nascimento.SelectionRange.Start;
+            Double.TryParse(txb_idadeCrianca.Text.Replace('.', ','), out double idade);
             var fichaBebeTresMeses = new FichaBebeTresMeses(txb_nomeMae.Text, txb_profissaoMae.Text, txb_nomePai.Text, txb_profissaoPai.Text,
-                txb_endereco.Text, txb_nomeCrianca.Text, int.Parse(txb_idadeCrianca.Text),
-                txb_pediatra.Text);
+                txb_endereco.Text, txb_nomeCrianca.Text, idade,
+                txb_pediatra.Text)
+            { Data = data, Data_Nascimento = nascimeno };
             return fichaBebeTresMeses;
         }
 
-        private TextBox ConsultarCampos (List<TextBox> lista) 
+        private void mtc_Nascimento_DateChanged(object sender, DateRangeEventArgs e)
         {
-            return lista.First(x => String.IsNullOrEmpty(x.Text))!;//teste
+            bt_iniciarForm.Enabled = true;
         }
-        
     }
 }

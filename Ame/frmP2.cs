@@ -24,7 +24,7 @@ namespace Ame
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmP1 p1 = new frmP1();
+            frmP1 p1 = new frmP1(this.Ficha);
             this.Dispose();
             p1.ShowDialog();
         }
