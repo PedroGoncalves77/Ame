@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP5
     {
@@ -234,5 +236,7 @@
         private TextBox txb_alergia;
         private TextBox txb_Intestino;
         private TextBox txb_congestao;
+        private SaudeDaCrianca SaudeDaCrianca { get; set; }
+        private FichaBebeTresMeses Ficha {  get; set; } 
     }
 }

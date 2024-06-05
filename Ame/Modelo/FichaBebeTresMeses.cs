@@ -22,7 +22,7 @@ namespace Ame.Modelo
             Idade_Crianca = idade_Crianca;
             Nome_Pediatra = nome_Pediatra;
         }
-
+        public virtual ICollection<SaudeDaCrianca> SaudeCrianca { get; set; } = new List<SaudeDaCrianca>();
         public int Id { get; set; }
         public int Contrato { get; set; }
         public DateTime Data { get; set; }
@@ -36,6 +36,10 @@ namespace Ame.Modelo
         public DateTime Data_Nascimento { get; set; }
         public string Nome_Pediatra { get; set; }
 
+        public void AdicionarSaude(SaudeDaCrianca saudeDaCrianca) 
+        {
+            this.SaudeCrianca.Add(saudeDaCrianca);
+        }
 
 
 

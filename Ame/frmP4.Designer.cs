@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP4
     {
@@ -159,7 +161,7 @@
             // rbt_nao7
             // 
             rbt_nao7.AutoSize = true;
-            rbt_nao7.Location = new Point(218, 33);
+            rbt_nao7.Location = new Point(219, 37);
             rbt_nao7.Name = "rbt_nao7";
             rbt_nao7.Size = new Size(47, 19);
             rbt_nao7.TabIndex = 30;
@@ -206,5 +208,8 @@
         private Label lbl_8a;
         private RadioButton rbt_sim7;
         private RadioButton rbt_nao7;
+        private FichaBebeTresMeses Ficha { get; set; }
+        private SaudeDaCrianca SaudeDaCrianca { get; set; }
+        
     }
 }

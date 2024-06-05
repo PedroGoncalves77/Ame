@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP6
     {
@@ -178,5 +180,7 @@
         private RadioButton rbt_nao12;
         private RadioButton rbt_sim13;
         private RadioButton rbt_nao13;
+        private FichaBebeTresMeses Ficha { get; set; }
+        private SaudeDaCrianca SaudeDaCrianca { get; set; }
     }
 }

@@ -11,10 +11,12 @@ namespace Ame.BD
     internal class BD_Context : DbContext
     {
         public DbSet<FichaBebeTresMeses> FichaBebeTresMeses { get; set; }  
+        public DbSet<SaudeDaCrianca> SaudeDaCriancas { get; set; }
+
         private string ConexaoBD = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=BD_AME2;Integrated Security=True;Encrypt=False;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(ConexaoBD);
+            optionsBuilder.UseSqlServer(ConexaoBD).UseLazyLoadingProxies();
         }
     }
 }

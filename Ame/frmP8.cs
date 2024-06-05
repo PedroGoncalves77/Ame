@@ -19,9 +19,9 @@ namespace Ame
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmP7 p7 = new frmP7();
+            //frmP7 p7 = new frmP7();
             this.Dispose();
-            p7.ShowDialog();
+            //p7.ShowDialog();
             
         }
 

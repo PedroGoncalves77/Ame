@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Ame.BD;
+using Ame.Modelo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +14,19 @@ namespace Ame
 {
     public partial class frmP7 : Form
     {
-        public frmP7()
+        public frmP7(FichaBebeTresMeses ficha)
         {
             InitializeComponent();
+            this.Ficha = ficha;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmP6 p6 = new frmP6();
+            var crianca = this.Ficha.SaudeCrianca.ToList();
+            var cri = crianca.Last();
+            var context = new BD_Context();
+            var dal = new DAL<FichaBebeTresMeses>(context);
+            frmP6 p6 = new frmP6(this.Ficha, cri!);
             this.Dispose();
             p6.ShowDialog();
             

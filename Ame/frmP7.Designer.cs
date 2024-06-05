@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP7
     {
@@ -204,5 +206,7 @@
         private RadioButton rbt_nao15;
         private Label lbl_14a;
         private Label lbl_15a;
+        private FichaBebeTresMeses Ficha { get; set; }
+        
     }
 }

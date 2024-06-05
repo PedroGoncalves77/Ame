@@ -119,6 +119,7 @@ namespace Ame
         private Label lbl_3;
         private Button bt_anterior;
         private TextBox txt_3;
-        private FichaBebeTresMeses Ficha;
+        private FichaBebeTresMeses Ficha { get; set; }
+        private SaudeDaCrianca SaudeCrianca { get; set; }
     }
 }
