@@ -53,7 +53,12 @@ namespace Ame
                 this.AmbienteSono.Pergunta89b = txt_89b.Text;
                 dal.Alterar(this.AmbienteSono);
                 dalFicha.Alterar(this.Ficha);
-                frmP33 p33 = new frmP33();
+                var list = this.Ficha.SobreConsultoria.ToList();
+                if (!list.Any())
+                    this.Ficha.AdicionarSobreConsultoria(new SobreConsultoria());
+
+
+                frmP33 p33 = new frmP33(this.Ficha, this.Ficha.SobreConsultoria.ToList().Last());
                 this.Dispose();
                 p33.ShowDialog();
             }

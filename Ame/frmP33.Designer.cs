@@ -1,4 +1,7 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+using System.Security.AccessControl;
+
+namespace Ame
 {
     partial class frmP33
     {
@@ -69,6 +72,7 @@
             bt_concluir.TabIndex = 263;
             bt_concluir.Text = "Concluir";
             bt_concluir.UseVisualStyleBackColor = true;
+            bt_concluir.Click += bt_concluir_Click;
             // 
             // lbl_90
             // 
@@ -105,6 +109,7 @@
             rbt_sim91.TabStop = true;
             rbt_sim91.Text = "Sim";
             rbt_sim91.UseVisualStyleBackColor = true;
+            rbt_sim91.CheckedChanged += rbt_sim91_CheckedChanged;
             // 
             // rbt_nao91
             // 
@@ -116,6 +121,7 @@
             rbt_nao91.TabStop = true;
             rbt_nao91.Text = "Não";
             rbt_nao91.UseVisualStyleBackColor = true;
+            rbt_nao91.CheckedChanged += rbt_nao91_CheckedChanged;
             // 
             // rbt_sim90
             // 
@@ -127,6 +133,7 @@
             rbt_sim90.TabStop = true;
             rbt_sim90.Text = "Sim";
             rbt_sim90.UseVisualStyleBackColor = true;
+            rbt_sim90.CheckedChanged += rbt_sim90_CheckedChanged;
             // 
             // rbt_nao90
             // 
@@ -138,6 +145,7 @@
             rbt_nao90.TabStop = true;
             rbt_nao90.Text = "Não";
             rbt_nao90.UseVisualStyleBackColor = true;
+            rbt_nao90.CheckedChanged += rbt_nao90_CheckedChanged;
             // 
             // frmP33
             // 
@@ -177,5 +185,7 @@
         private RadioButton rbt_nao90;
         private RadioButton rbt_sim89;
         private RadioButton rbt_nao89;
+        private FichaBebeTresMeses Ficha { get; set; }
+        private SobreConsultoria SobreConsultoria { get; set; }
     }
 }
