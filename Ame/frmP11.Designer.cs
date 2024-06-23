@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP11
     {
@@ -81,17 +83,19 @@
             rbt_nao26.TabStop = true;
             rbt_nao26.Text = "Não";
             rbt_nao26.UseVisualStyleBackColor = true;
+            rbt_nao26.CheckedChanged += rbt_nao26_CheckedChanged;
             // 
             // rbt_sim26
             // 
             rbt_sim26.AutoSize = true;
-            rbt_sim26.Location = new Point(406, 23);
+            rbt_sim26.Location = new Point(405, 21);
             rbt_sim26.Name = "rbt_sim26";
             rbt_sim26.Size = new Size(45, 19);
             rbt_sim26.TabIndex = 24;
             rbt_sim26.TabStop = true;
             rbt_sim26.Text = "Sim";
             rbt_sim26.UseVisualStyleBackColor = true;
+            rbt_sim26.CheckedChanged += rbt_sim26_CheckedChanged;
             // 
             // label3
             // 
@@ -141,6 +145,7 @@
             rbt_dois27.TabStop = true;
             rbt_dois27.Text = "Dois";
             rbt_dois27.UseVisualStyleBackColor = true;
+            rbt_dois27.CheckedChanged += rbt_dois27_CheckedChanged;
             // 
             // rbt_um27
             // 
@@ -152,6 +157,7 @@
             rbt_um27.TabStop = true;
             rbt_um27.Text = "Um";
             rbt_um27.UseVisualStyleBackColor = true;
+            rbt_um27.CheckedChanged += rbt_um27_CheckedChanged;
             // 
             // lbl_27
             // 
@@ -181,6 +187,7 @@
             rbt_nao28.TabStop = true;
             rbt_nao28.Text = "Não";
             rbt_nao28.UseVisualStyleBackColor = true;
+            rbt_nao28.CheckedChanged += rbt_nao28_CheckedChanged;
             // 
             // rbt_sim28
             // 
@@ -192,6 +199,7 @@
             rbt_sim28.TabStop = true;
             rbt_sim28.Text = "Sim";
             rbt_sim28.UseVisualStyleBackColor = true;
+            rbt_sim28.CheckedChanged += rbt_sim28_CheckedChanged;
             // 
             // rbt_nao29
             // 
@@ -203,6 +211,7 @@
             rbt_nao29.TabStop = true;
             rbt_nao29.Text = "Não";
             rbt_nao29.UseVisualStyleBackColor = true;
+            rbt_nao29.CheckedChanged += rbt_nao29_CheckedChanged;
             // 
             // rbt_sim29
             // 
@@ -214,6 +223,7 @@
             rbt_sim29.TabStop = true;
             rbt_sim29.Text = "Sim";
             rbt_sim29.UseVisualStyleBackColor = true;
+            rbt_sim29.CheckedChanged += rbt_sim29_CheckedChanged;
             // 
             // lbl_29
             // 
@@ -291,5 +301,7 @@
         private Label lbl_29;
         private TextBox txt_30;
         private Label lbl_30;
+        private FichaBebeTresMeses Ficha { get; set; }
+        private AlimentacaoCrianca AlimentacaoCrianca { get; set; }
     }
 }

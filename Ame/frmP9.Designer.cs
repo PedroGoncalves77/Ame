@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP9
     {
@@ -96,6 +98,7 @@
             rbt_nao20.TabStop = true;
             rbt_nao20.Text = "Não";
             rbt_nao20.UseVisualStyleBackColor = true;
+            rbt_nao20.CheckedChanged += rbt_nao20_CheckedChanged;
             // 
             // rbt_sim20
             // 
@@ -107,6 +110,7 @@
             rbt_sim20.TabStop = true;
             rbt_sim20.Text = "Sim";
             rbt_sim20.UseVisualStyleBackColor = true;
+            rbt_sim20.CheckedChanged += rbt_sim20_CheckedChanged;
             // 
             // frmP9
             // 
@@ -134,5 +138,8 @@
         private Label lbl_20;
         private RadioButton rbt_nao20;
         private RadioButton rbt_sim20;
+        private FichaBebeTresMeses Ficha { get; set; }
+        private NivelDeAtividade NivelDeAtividade { get; set; }
+
     }
 }

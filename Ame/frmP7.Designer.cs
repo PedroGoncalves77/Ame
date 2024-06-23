@@ -207,6 +207,7 @@ namespace Ame
         private Label lbl_14a;
         private Label lbl_15a;
         private FichaBebeTresMeses Ficha { get; set; }
-        
+        private NivelDeAtividade NivelDeAtividade { get; set; }
+
     }
 }

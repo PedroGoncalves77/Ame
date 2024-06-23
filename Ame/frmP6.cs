@@ -35,7 +35,7 @@ namespace Ame
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var context = new BD_Context();
+            using var context = new BD_Context();
             var dal = new DAL<SaudeDaCrianca>(context);
             var dalFicha = new DAL<FichaBebeTresMeses>(context);
             if (!Consulta.Consultar(new List<string>() { txb_problemaRespiracao.Text, txb_suplementacao.Text }))
@@ -43,12 +43,12 @@ namespace Ame
                 this.SaudeDaCrianca.Pergunta12 = txb_suplementacao.Text;
                 this.SaudeDaCrianca.Pergunta13 = txb_problemaRespiracao.Text;
                 dal.Alterar(this.SaudeDaCrianca);
-                if (!Consulta.Consultar(SaudeDaCrianca.Listar())) 
-                {
-                  this.Ficha.AdicionarSaude(this.SaudeDaCrianca);
-                  dalFicha.Alterar(this.Ficha);  
-                }
-                frmP7 p7 = new frmP7(this.Ficha);
+                dalFicha.Alterar(this.Ficha);
+                var list = this.Ficha.NivelAtividade.ToList();
+                if (!list.Any())
+                this.Ficha.AdicionarNivelAtividade(new NivelDeAtividade());
+                
+                frmP7 p7 = new frmP7(this.Ficha,Ficha.NivelAtividade.ToList().First());
                 this.Dispose();
                 p7.ShowDialog();
             }

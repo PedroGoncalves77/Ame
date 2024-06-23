@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Ame.Migrations
 {
     [DbContext(typeof(BD_Context))]
-    [Migration("20240526223519_CreateSaudeDaCrianca")]
-    partial class CreateSaudeDaCrianca
+    [Migration("20240605002105_Columns")]
+    partial class Columns
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,6 +21,9 @@ namespace Ame.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "8.0.5")
+                .HasAnnotation("Proxies:ChangeTracking", false)
+                .HasAnnotation("Proxies:CheckEquality", false)
+                .HasAnnotation("Proxies:LazyLoading", true)
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -78,6 +81,42 @@ namespace Ame.Migrations
                     b.ToTable("FichaBebeTresMeses");
                 });
 
+            modelBuilder.Entity("Ame.Modelo.NivelDeAtividade", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("FichaBebeTresMesesId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Pergunta14")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Pergunta15")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Pergunta16")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Pergunta17")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Pergunta18")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Pergunta19")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FichaBebeTresMesesId");
+
+                    b.ToTable("NivelDeAtividade");
+                });
+
             modelBuilder.Entity("Ame.Modelo.SaudeDaCrianca", b =>
                 {
                     b.Property<int>("Id")
@@ -86,7 +125,10 @@ namespace Ame.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("Pergunta1")
+                    b.Property<int?>("FichaBebeTresMesesId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("Pergunta1")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Pergunta10")
@@ -102,23 +144,18 @@ namespace Ame.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Pergunta2")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Pergunta3")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Pergunta4")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Pergunta5")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Pergunta6")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Pergunta7")
@@ -132,7 +169,34 @@ namespace Ame.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("FichaBebeTresMesesId");
+
                     b.ToTable("SaudeDaCriancas");
+                });
+
+            modelBuilder.Entity("Ame.Modelo.NivelDeAtividade", b =>
+                {
+                    b.HasOne("Ame.Modelo.FichaBebeTresMeses", "FichaBebeTresMeses")
+                        .WithMany("NivelAtividade")
+                        .HasForeignKey("FichaBebeTresMesesId");
+
+                    b.Navigation("FichaBebeTresMeses");
+                });
+
+            modelBuilder.Entity("Ame.Modelo.SaudeDaCrianca", b =>
+                {
+                    b.HasOne("Ame.Modelo.FichaBebeTresMeses", "FichaBebeTresMeses")
+                        .WithMany("SaudeCrianca")
+                        .HasForeignKey("FichaBebeTresMesesId");
+
+                    b.Navigation("FichaBebeTresMeses");
+                });
+
+            modelBuilder.Entity("Ame.Modelo.FichaBebeTresMeses", b =>
+                {
+                    b.Navigation("NivelAtividade");
+
+                    b.Navigation("SaudeCrianca");
                 });
 #pragma warning restore 612, 618
         }

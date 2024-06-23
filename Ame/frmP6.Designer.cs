@@ -182,5 +182,7 @@ namespace Ame
         private RadioButton rbt_nao13;
         private FichaBebeTresMeses Ficha { get; set; }
         private SaudeDaCrianca SaudeDaCrianca { get; set; }
+
+        private NivelDeAtividade NivelDeAtividade { get; set; } 
     }
 }

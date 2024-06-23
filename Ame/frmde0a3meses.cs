@@ -28,22 +28,17 @@ namespace Ame
             var dalFicha = new DAL<FichaBebeTresMeses>(context);
             var dalSaude = new DAL<SaudeDaCrianca>(context);
             var saude = new SaudeDaCrianca();
-            saude.Pergunta1 = DateTime.Now;
-            saude.Pergunta2 = "";
-            saude.Pergunta3 = "";
-            saude.Pergunta4 = "";
-            saude.Pergunta5 = "";
-            saude.Pergunta6 = "";
+           
 
             List<String> listaTxb = new List<String>() {txb_endereco.Text, txb_idadeCrianca.Text, txb_nomeMae.Text, txb_nomePai.Text,
                 txb_pediatra.Text, txb_profissaoPai.Text, txb_profissaoMae.Text, this.mtc_Data.SelectionRange.Start.ToString(),
                 this.mtc_Nascimento.SelectionRange.Start.ToString() };
             if (!Consulta.Consultar(listaTxb))
             {
-                
                 var ficha = CriarFicha();
                 dalFicha.Adicionar(ficha);
                 dalSaude.Adicionar(saude);
+                ficha.AdicionarSaude(saude);
                 frmP1 p1 = new frmP1(ficha, saude);
                 p1.ShowDialog();
                 this.Dispose();

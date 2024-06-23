@@ -23,6 +23,9 @@ namespace Ame.Modelo
             Nome_Pediatra = nome_Pediatra;
         }
         public virtual ICollection<SaudeDaCrianca> SaudeCrianca { get; set; } = new List<SaudeDaCrianca>();
+        public virtual ICollection<NivelDeAtividade> NivelAtividade { get; set; } = new List<NivelDeAtividade>();
+        public virtual ICollection<AlimentacaoCrianca> AlimentacaoCrianca { get; set; } = new List<AlimentacaoCrianca>();
+        public virtual ICollection<TemperamentoCrianca> TemperamentoCrianca { get; set; } = new List<TemperamentoCrianca>();
         public int Id { get; set; }
         public int Contrato { get; set; }
         public DateTime Data { get; set; }
@@ -39,6 +42,18 @@ namespace Ame.Modelo
         public void AdicionarSaude(SaudeDaCrianca saudeDaCrianca) 
         {
             this.SaudeCrianca.Add(saudeDaCrianca);
+        }
+        public void AdicionarNivelAtividade(NivelDeAtividade nivelDeAtividade)
+        {
+            this.NivelAtividade.Add(nivelDeAtividade);
+        }
+        public void AdicionarAlimentacaoCrianaca(AlimentacaoCrianca alimentacaoCrianca)
+        {
+            this.AlimentacaoCrianca.Add(alimentacaoCrianca);
+        }
+        public void AdicionarTemperamentoCrianaca(TemperamentoCrianca temperamentoCrianca)
+        {
+            this.TemperamentoCrianca.Add(temperamentoCrianca);
         }
 
 
