@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP29
     {
@@ -28,41 +30,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.rbt_nao82 = new RadioButton();
-            this.rbt_sim82 = new RadioButton();
+            rbt_nao82 = new RadioButton();
+            rbt_sim82 = new RadioButton();
             lbl_82 = new Label();
-            txt_74 = new TextBox();
+            txt_80 = new TextBox();
             lbl_74 = new Label();
             bt_anterior = new Button();
             bt_proximo = new Button();
             lbl_69a = new Label();
-            rbt_nao69 = new RadioButton();
-            rbt_sim69 = new RadioButton();
-            txt_69 = new TextBox();
+            rbt_nao81 = new RadioButton();
+            rbt_sim81 = new RadioButton();
+            txt_81 = new TextBox();
             lbl_69 = new Label();
             SuspendLayout();
             // 
             // rbt_nao82
             // 
-            this.rbt_nao82.AutoSize = true;
-            this.rbt_nao82.Location = new Point(71, 325);
-            this.rbt_nao82.Name = "rbt_nao82";
-            this.rbt_nao82.Size = new Size(47, 19);
-            this.rbt_nao82.TabIndex = 213;
-            this.rbt_nao82.TabStop = true;
-            this.rbt_nao82.Text = "Não";
-            this.rbt_nao82.UseVisualStyleBackColor = true;
+            rbt_nao82.AutoSize = true;
+            rbt_nao82.Location = new Point(71, 325);
+            rbt_nao82.Name = "rbt_nao82";
+            rbt_nao82.Size = new Size(47, 19);
+            rbt_nao82.TabIndex = 213;
+            rbt_nao82.TabStop = true;
+            rbt_nao82.Text = "Não";
+            rbt_nao82.UseVisualStyleBackColor = true;
+            rbt_nao82.CheckedChanged += rbt_nao82_CheckedChanged;
             // 
             // rbt_sim82
             // 
-            this.rbt_sim82.AutoSize = true;
-            this.rbt_sim82.Location = new Point(24, 325);
-            this.rbt_sim82.Name = "rbt_sim82";
-            this.rbt_sim82.Size = new Size(45, 19);
-            this.rbt_sim82.TabIndex = 212;
-            this.rbt_sim82.TabStop = true;
-            this.rbt_sim82.Text = "Sim";
-            this.rbt_sim82.UseVisualStyleBackColor = true;
+            rbt_sim82.AutoSize = true;
+            rbt_sim82.Location = new Point(24, 325);
+            rbt_sim82.Name = "rbt_sim82";
+            rbt_sim82.Size = new Size(45, 19);
+            rbt_sim82.TabIndex = 212;
+            rbt_sim82.TabStop = true;
+            rbt_sim82.Text = "Sim";
+            rbt_sim82.UseVisualStyleBackColor = true;
+            rbt_sim82.CheckedChanged += rbt_sim82_CheckedChanged;
             // 
             // lbl_82
             // 
@@ -73,13 +77,13 @@
             lbl_82.TabIndex = 211;
             lbl_82.Text = "82- Seu filho (a) gosta do quarto, berço? Os pais brincam com o bebê no ambiente de sono?";
             // 
-            // txt_74
+            // txt_80
             // 
-            txt_74.Location = new Point(23, 44);
-            txt_74.Multiline = true;
-            txt_74.Name = "txt_74";
-            txt_74.Size = new Size(755, 94);
-            txt_74.TabIndex = 194;
+            txt_80.Location = new Point(23, 44);
+            txt_80.Multiline = true;
+            txt_80.Name = "txt_80";
+            txt_80.Size = new Size(755, 94);
+            txt_80.TabIndex = 194;
             // 
             // lbl_74
             // 
@@ -120,35 +124,38 @@
             lbl_69a.TabIndex = 219;
             lbl_69a.Text = "Descreva:";
             // 
-            // rbt_nao69
+            // rbt_nao81
             // 
-            rbt_nao69.AutoSize = true;
-            rbt_nao69.Location = new Point(80, 167);
-            rbt_nao69.Name = "rbt_nao69";
-            rbt_nao69.Size = new Size(47, 19);
-            rbt_nao69.TabIndex = 218;
-            rbt_nao69.TabStop = true;
-            rbt_nao69.Text = "Não";
-            rbt_nao69.UseVisualStyleBackColor = true;
+            rbt_nao81.AutoSize = true;
+            rbt_nao81.Location = new Point(80, 167);
+            rbt_nao81.Name = "rbt_nao81";
+            rbt_nao81.Size = new Size(47, 19);
+            rbt_nao81.TabIndex = 218;
+            rbt_nao81.TabStop = true;
+            rbt_nao81.Text = "Não";
+            rbt_nao81.UseVisualStyleBackColor = true;
+            rbt_nao81.CheckedChanged += rbt_nao81_CheckedChanged;
             // 
-            // rbt_sim69
+            // rbt_sim81
             // 
-            rbt_sim69.AutoSize = true;
-            rbt_sim69.Location = new Point(29, 167);
-            rbt_sim69.Name = "rbt_sim69";
-            rbt_sim69.Size = new Size(45, 19);
-            rbt_sim69.TabIndex = 217;
-            rbt_sim69.TabStop = true;
-            rbt_sim69.Text = "Sim";
-            rbt_sim69.UseVisualStyleBackColor = true;
+            rbt_sim81.AutoSize = true;
+            rbt_sim81.Location = new Point(29, 167);
+            rbt_sim81.Name = "rbt_sim81";
+            rbt_sim81.Size = new Size(45, 19);
+            rbt_sim81.TabIndex = 217;
+            rbt_sim81.TabStop = true;
+            rbt_sim81.Text = "Sim";
+            rbt_sim81.UseVisualStyleBackColor = true;
+            rbt_sim81.CheckedChanged += rbt_sim81_CheckedChanged;
             // 
-            // txt_69
+            // txt_81
             // 
-            txt_69.Location = new Point(23, 208);
-            txt_69.Multiline = true;
-            txt_69.Name = "txt_69";
-            txt_69.Size = new Size(755, 87);
-            txt_69.TabIndex = 216;
+            txt_81.Enabled = false;
+            txt_81.Location = new Point(22, 217);
+            txt_81.Multiline = true;
+            txt_81.Name = "txt_81";
+            txt_81.Size = new Size(755, 87);
+            txt_81.TabIndex = 216;
             // 
             // lbl_69
             // 
@@ -164,14 +171,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(lbl_69a);
-            Controls.Add(rbt_nao69);
-            Controls.Add(rbt_sim69);
-            Controls.Add(txt_69);
+            Controls.Add(rbt_nao81);
+            Controls.Add(rbt_sim81);
+            Controls.Add(txt_81);
             Controls.Add(lbl_69);
-            Controls.Add(this.rbt_nao82);
-            Controls.Add(this.rbt_sim82);
+            Controls.Add(rbt_nao82);
+            Controls.Add(rbt_sim82);
             Controls.Add(lbl_82);
-            Controls.Add(txt_74);
+            Controls.Add(txt_80);
             Controls.Add(lbl_74);
             Controls.Add(bt_anterior);
             Controls.Add(bt_proximo);
@@ -187,16 +194,18 @@
         private RadioButton rbt_noite79;
         private RadioButton rbt_dia79;
         private Label lbl_82;
-        private TextBox txt_74;
+        private TextBox txt_80;
         private Label lbl_74;
         private Button bt_anterior;
         private Button bt_proximo;
         private Label lbl_69a;
-        private RadioButton rbt_nao69;
-        private RadioButton rbt_sim69;
-        private TextBox txt_69;
+        private RadioButton rbt_nao81;
+        private RadioButton rbt_sim81;
+        private TextBox txt_81;
         private Label lbl_69;
         private RadioButton rbt_nao82;
         private RadioButton rbt_sim82;
+        private FichaBebeTresMeses Ficha { get; set; }
+        private AmbienteSono AmbienteSono { get; set; }
     }
 }

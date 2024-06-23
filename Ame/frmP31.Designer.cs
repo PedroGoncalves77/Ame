@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP31
     {
@@ -52,6 +54,7 @@
             rbt_nao84.TabStop = true;
             rbt_nao84.Text = "Não";
             rbt_nao84.UseVisualStyleBackColor = true;
+            rbt_nao84.CheckedChanged += rbt_nao84_CheckedChanged;
             // 
             // rbt_sim84
             // 
@@ -63,6 +66,7 @@
             rbt_sim84.TabStop = true;
             rbt_sim84.Text = "Sim";
             rbt_sim84.UseVisualStyleBackColor = true;
+            rbt_sim84.CheckedChanged += rbt_sim84_CheckedChanged;
             // 
             // txt_85
             // 
@@ -131,6 +135,7 @@
             rbt_nao83.TabStop = true;
             rbt_nao83.Text = "Não";
             rbt_nao83.UseVisualStyleBackColor = true;
+            rbt_nao83.CheckedChanged += rbt_nao83_CheckedChanged;
             // 
             // rbt_sim83
             // 
@@ -142,6 +147,7 @@
             rbt_sim83.TabStop = true;
             rbt_sim83.Text = "Sim";
             rbt_sim83.UseVisualStyleBackColor = true;
+            rbt_sim83.CheckedChanged += rbt_sim83_CheckedChanged;
             // 
             // txt_86
             // 
@@ -199,5 +205,7 @@
         private RadioButton rbt_sim83;
         private TextBox txt_86;
         private Label lbl_86;
+        private FichaBebeTresMeses Ficha { get; set; }
+        private AmbienteSono AmbienteSono { get; set; }
     }
 }

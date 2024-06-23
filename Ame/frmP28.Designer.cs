@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP28
     {
@@ -28,8 +30,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            rbt_nao71 = new RadioButton();
-            rbt_sim71 = new RadioButton();
+            rbt_nao76 = new RadioButton();
+            rbt_sim76 = new RadioButton();
             lbl_76 = new Label();
             rbt_nao75 = new RadioButton();
             rbt_sim75 = new RadioButton();
@@ -41,7 +43,7 @@
             lbl_74 = new Label();
             bt_anterior = new Button();
             bt_proximo = new Button();
-            rbt_77nao = new RadioButton();
+            rbt_nao77 = new RadioButton();
             rbt_sim77 = new RadioButton();
             lbl_77 = new Label();
             rbt_penumbra78 = new RadioButton();
@@ -54,27 +56,29 @@
             label1 = new Label();
             SuspendLayout();
             // 
-            // rbt_nao71
+            // rbt_nao76
             // 
-            rbt_nao71.AutoSize = true;
-            rbt_nao71.Location = new Point(173, 175);
-            rbt_nao71.Name = "rbt_nao71";
-            rbt_nao71.Size = new Size(47, 19);
-            rbt_nao71.TabIndex = 177;
-            rbt_nao71.TabStop = true;
-            rbt_nao71.Text = "Não";
-            rbt_nao71.UseVisualStyleBackColor = true;
+            rbt_nao76.AutoSize = true;
+            rbt_nao76.Location = new Point(173, 175);
+            rbt_nao76.Name = "rbt_nao76";
+            rbt_nao76.Size = new Size(47, 19);
+            rbt_nao76.TabIndex = 177;
+            rbt_nao76.TabStop = true;
+            rbt_nao76.Text = "Não";
+            rbt_nao76.UseVisualStyleBackColor = true;
+            rbt_nao76.CheckedChanged += rbt_nao76_CheckedChanged;
             // 
-            // rbt_sim71
+            // rbt_sim76
             // 
-            rbt_sim71.AutoSize = true;
-            rbt_sim71.Location = new Point(122, 175);
-            rbt_sim71.Name = "rbt_sim71";
-            rbt_sim71.Size = new Size(45, 19);
-            rbt_sim71.TabIndex = 176;
-            rbt_sim71.TabStop = true;
-            rbt_sim71.Text = "Sim";
-            rbt_sim71.UseVisualStyleBackColor = true;
+            rbt_sim76.AutoSize = true;
+            rbt_sim76.Location = new Point(122, 175);
+            rbt_sim76.Name = "rbt_sim76";
+            rbt_sim76.Size = new Size(45, 19);
+            rbt_sim76.TabIndex = 176;
+            rbt_sim76.TabStop = true;
+            rbt_sim76.Text = "Sim";
+            rbt_sim76.UseVisualStyleBackColor = true;
+            rbt_sim76.CheckedChanged += rbt_sim76_CheckedChanged;
             // 
             // lbl_76
             // 
@@ -94,6 +98,7 @@
             rbt_nao75.TabStop = true;
             rbt_nao75.Text = "Não";
             rbt_nao75.UseVisualStyleBackColor = true;
+            rbt_nao75.CheckedChanged += rbt_nao75_CheckedChanged;
             // 
             // rbt_sim75
             // 
@@ -105,6 +110,7 @@
             rbt_sim75.TabStop = true;
             rbt_sim75.Text = "Sim";
             rbt_sim75.UseVisualStyleBackColor = true;
+            rbt_sim75.CheckedChanged += rbt_sim75_CheckedChanged;
             // 
             // lbl_75
             // 
@@ -133,6 +139,7 @@
             rbt_nao74.TabStop = true;
             rbt_nao74.Text = "Não";
             rbt_nao74.UseVisualStyleBackColor = true;
+            rbt_nao74.CheckedChanged += rbt_nao74_CheckedChanged;
             // 
             // rbt_sim74
             // 
@@ -144,9 +151,11 @@
             rbt_sim74.TabStop = true;
             rbt_sim74.Text = "Sim";
             rbt_sim74.UseVisualStyleBackColor = true;
+            rbt_sim74.CheckedChanged += rbt_sim74_CheckedChanged;
             // 
             // txt_74
             // 
+            txt_74.Enabled = false;
             txt_74.Location = new Point(23, 70);
             txt_74.Multiline = true;
             txt_74.Name = "txt_74";
@@ -184,16 +193,17 @@
             bt_proximo.UseVisualStyleBackColor = true;
             bt_proximo.Click += bt_proximo_Click;
             // 
-            // rbt_77nao
+            // rbt_nao77
             // 
-            rbt_77nao.AutoSize = true;
-            rbt_77nao.Location = new Point(187, 207);
-            rbt_77nao.Name = "rbt_77nao";
-            rbt_77nao.Size = new Size(47, 19);
-            rbt_77nao.TabIndex = 182;
-            rbt_77nao.TabStop = true;
-            rbt_77nao.Text = "Não";
-            rbt_77nao.UseVisualStyleBackColor = true;
+            rbt_nao77.AutoSize = true;
+            rbt_nao77.Location = new Point(187, 207);
+            rbt_nao77.Name = "rbt_nao77";
+            rbt_nao77.Size = new Size(47, 19);
+            rbt_nao77.TabIndex = 182;
+            rbt_nao77.TabStop = true;
+            rbt_nao77.Text = "Não";
+            rbt_nao77.UseVisualStyleBackColor = true;
+            rbt_nao77.CheckedChanged += rbt_nao77_CheckedChanged;
             // 
             // rbt_sim77
             // 
@@ -205,6 +215,7 @@
             rbt_sim77.TabStop = true;
             rbt_sim77.Text = "Sim";
             rbt_sim77.UseVisualStyleBackColor = true;
+            rbt_sim77.CheckedChanged += rbt_sim77_CheckedChanged;
             // 
             // lbl_77
             // 
@@ -224,6 +235,7 @@
             rbt_penumbra78.TabStop = true;
             rbt_penumbra78.Text = "Penumbra";
             rbt_penumbra78.UseVisualStyleBackColor = true;
+            rbt_penumbra78.CheckedChanged += rbt_penumbra78_CheckedChanged;
             // 
             // rbt_claro78
             // 
@@ -235,6 +247,7 @@
             rbt_claro78.TabStop = true;
             rbt_claro78.Text = "Claro";
             rbt_claro78.UseVisualStyleBackColor = true;
+            rbt_claro78.CheckedChanged += rbt_claro78_CheckedChanged;
             // 
             // lbl_78
             // 
@@ -255,6 +268,7 @@
             rbt_escuro78.TabStop = true;
             rbt_escuro78.Text = "Escuro";
             rbt_escuro78.UseVisualStyleBackColor = true;
+            rbt_escuro78.CheckedChanged += rbt_escuro78_CheckedChanged;
             // 
             // rbt_ambos79
             // 
@@ -266,6 +280,7 @@
             rbt_ambos79.TabStop = true;
             rbt_ambos79.Text = "Ambos";
             rbt_ambos79.UseVisualStyleBackColor = true;
+            rbt_ambos79.CheckedChanged += rbt_ambos79_CheckedChanged;
             // 
             // rbt_noite79
             // 
@@ -277,6 +292,7 @@
             rbt_noite79.TabStop = true;
             rbt_noite79.Text = "Noite";
             rbt_noite79.UseVisualStyleBackColor = true;
+            rbt_noite79.CheckedChanged += rbt_noite79_CheckedChanged;
             // 
             // rbt_dia79
             // 
@@ -288,6 +304,7 @@
             rbt_dia79.TabStop = true;
             rbt_dia79.Text = "Dia";
             rbt_dia79.UseVisualStyleBackColor = true;
+            rbt_dia79.CheckedChanged += rbt_dia79_CheckedChanged;
             // 
             // label1
             // 
@@ -311,11 +328,11 @@
             Controls.Add(rbt_penumbra78);
             Controls.Add(rbt_claro78);
             Controls.Add(lbl_78);
-            Controls.Add(rbt_77nao);
+            Controls.Add(rbt_nao77);
             Controls.Add(rbt_sim77);
             Controls.Add(lbl_77);
-            Controls.Add(rbt_nao71);
-            Controls.Add(rbt_sim71);
+            Controls.Add(rbt_nao76);
+            Controls.Add(rbt_sim76);
             Controls.Add(lbl_76);
             Controls.Add(rbt_nao75);
             Controls.Add(rbt_sim75);
@@ -334,8 +351,8 @@
         }
 
         #endregion
-        private RadioButton rbt_nao71;
-        private RadioButton rbt_sim71;
+        private RadioButton rbt_nao76;
+        private RadioButton rbt_sim76;
         private Label lbl_76;
         private RadioButton rbt_nao75;
         private RadioButton rbt_sim75;
@@ -352,7 +369,7 @@
         private Label lbl_74;
         private Button bt_anterior;
         private Button bt_proximo;
-        private RadioButton rbt_77nao;
+        private RadioButton rbt_nao77;
         private RadioButton rbt_sim77;
         private Label lbl_77;
         private RadioButton rbt_penumbra78;
@@ -363,5 +380,7 @@
         private RadioButton rbt_noite79;
         private RadioButton rbt_dia79;
         private Label label1;
+        private FichaBebeTresMeses Ficha { get; set; }
+        private AmbienteSono AmbienteSono { get; set; }
     }
 }

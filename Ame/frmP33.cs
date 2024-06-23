@@ -19,9 +19,9 @@ namespace Ame
 
         private void bt_anterior_Click(object sender, EventArgs e)
         {
-            frmP32 p32 = new frmP32();
+            //frmP32 p32 = new frmP32();
             this.Dispose();
-            p32.ShowDialog();
+            //p32.ShowDialog();
         }
     }
 }

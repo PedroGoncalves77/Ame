@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP24
     {
@@ -63,6 +65,7 @@
             // 
             // txt_61
             // 
+            txt_61.Enabled = false;
             txt_61.Location = new Point(23, 160);
             txt_61.Multiline = true;
             txt_61.Name = "txt_61";
@@ -136,6 +139,7 @@
             rbt_nao61.TabStop = true;
             rbt_nao61.Text = "Não";
             rbt_nao61.UseVisualStyleBackColor = true;
+            rbt_nao61.CheckedChanged += rbt_nao61_CheckedChanged;
             // 
             // rbt_sim61
             // 
@@ -147,6 +151,7 @@
             rbt_sim61.TabStop = true;
             rbt_sim61.Text = "Sim";
             rbt_sim61.UseVisualStyleBackColor = true;
+            rbt_sim61.CheckedChanged += rbt_sim61_CheckedChanged;
             // 
             // rbt_nao61b
             // 
@@ -158,6 +163,7 @@
             rbt_nao61b.TabStop = true;
             rbt_nao61b.Text = "Não";
             rbt_nao61b.UseVisualStyleBackColor = true;
+            rbt_nao61b.CheckedChanged += rbt_nao61b_CheckedChanged;
             // 
             // rbt_sim61b
             // 
@@ -169,6 +175,7 @@
             rbt_sim61b.TabStop = true;
             rbt_sim61b.Text = "Sim";
             rbt_sim61b.UseVisualStyleBackColor = true;
+            rbt_sim61b.CheckedChanged += rbt_sim61b_CheckedChanged;
             // 
             // lbl_61a
             // 
@@ -221,5 +228,8 @@
         private RadioButton rbt_nao61b;
         private RadioButton rbt_sim61b;
         private Label lbl_61a;
+
+        private FichaBebeTresMeses Ficha { get; set; }
+        private ProblemaSono ProblemaSono { get; set; }
     }
 }

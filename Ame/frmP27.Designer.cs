@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP27
     {
@@ -91,6 +93,7 @@
             rbt_nao69.TabStop = true;
             rbt_nao69.Text = "Não";
             rbt_nao69.UseVisualStyleBackColor = true;
+            rbt_nao69.CheckedChanged += rbt_nao69_CheckedChanged;
             // 
             // rbt_sim69
             // 
@@ -102,9 +105,11 @@
             rbt_sim69.TabStop = true;
             rbt_sim69.Text = "Sim";
             rbt_sim69.UseVisualStyleBackColor = true;
+            rbt_sim69.CheckedChanged += rbt_sim69_CheckedChanged;
             // 
             // txt_69
             // 
+            txt_69.Enabled = false;
             txt_69.Location = new Point(23, 65);
             txt_69.Multiline = true;
             txt_69.Name = "txt_69";
@@ -151,6 +156,7 @@
             rbt_nao70.TabStop = true;
             rbt_nao70.Text = "Não";
             rbt_nao70.UseVisualStyleBackColor = true;
+            rbt_nao70.CheckedChanged += rbt_nao70_CheckedChanged;
             // 
             // rbt_sim70
             // 
@@ -162,6 +168,7 @@
             rbt_sim70.TabStop = true;
             rbt_sim70.Text = "Sim";
             rbt_sim70.UseVisualStyleBackColor = true;
+            rbt_sim70.CheckedChanged += rbt_sim70_CheckedChanged;
             // 
             // rbt_nao71
             // 
@@ -173,6 +180,7 @@
             rbt_nao71.TabStop = true;
             rbt_nao71.Text = "Não";
             rbt_nao71.UseVisualStyleBackColor = true;
+            rbt_nao71.CheckedChanged += rbt_nao71_CheckedChanged;
             // 
             // rbt_sim71
             // 
@@ -184,6 +192,7 @@
             rbt_sim71.TabStop = true;
             rbt_sim71.Text = "Sim";
             rbt_sim71.UseVisualStyleBackColor = true;
+            rbt_sim71.CheckedChanged += rbt_sim71_CheckedChanged;
             // 
             // lbl_71
             // 
@@ -257,5 +266,7 @@
         private Label lbl_71;
         private TextBox txt_73;
         private Label lbl_73;
+        private FichaBebeTresMeses Ficha { get; set; }
+        private ProblemaSono ProblemaSono { get; set; }
     }
 }

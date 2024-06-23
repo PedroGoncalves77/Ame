@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP26
     {
@@ -90,6 +92,7 @@
             txt_66.Name = "txt_66";
             txt_66.Size = new Size(755, 68);
             txt_66.TabIndex = 127;
+            txt_66.Enabled = false; 
             // 
             // lbl_66
             // 
@@ -207,5 +210,7 @@
         private Label lbl_67;
         private TextBox txt_68;
         private Label lbl_68;
+        private FichaBebeTresMeses Ficha { get; set; }
+        private ProblemaSono ProblemaSono { get; set; }
     }
 }

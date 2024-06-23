@@ -28,6 +28,9 @@ namespace Ame.Modelo
         public virtual ICollection<TemperamentoCrianca> TemperamentoCrianca { get; set; } = new List<TemperamentoCrianca>();
         public virtual ICollection<SobrePais> SobrePais { get; set; } = new List<SobrePais>();
         public virtual ICollection<DinamicaFamiliar> DinamicaFamiliar { get; set; } = new List<DinamicaFamiliar>();
+        public virtual ICollection<ProblemaSono> ProblemaSono { get; set; } = new List<ProblemaSono>();
+        public virtual ICollection<AmbienteSono> AmbienteSono { get; set; } = new List<AmbienteSono>();
+        public virtual ICollection<SobreConsultoria> SobreConsultoria { get; set; } = new List<SobreConsultoria>();
         public int Id { get; set; }
         public int Contrato { get; set; }
         public DateTime Data { get; set; }
@@ -64,6 +67,18 @@ namespace Ame.Modelo
         public void AdicionarDinamica(DinamicaFamiliar dinamica)
         {
             this.DinamicaFamiliar.Add(dinamica);
+        }
+        public void AdicionarProblemaSono(ProblemaSono problema)
+        {
+            this.ProblemaSono.Add(problema);
+        }
+        public void AdicionarAmbienteSono(AmbienteSono ambiente)
+        {
+            this.AmbienteSono.Add(ambiente);
+        }
+        public void AdicionarSobreConsultoria(SobreConsultoria sobre)
+        {
+            this.SobreConsultoria.Add(sobre);
         }
 
 

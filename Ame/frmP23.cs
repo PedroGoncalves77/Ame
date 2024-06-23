@@ -46,12 +46,18 @@ namespace Ame
                 this.DinamicaFamiliar.Pergunta59 = txt_59.Text;
                 dal.Alterar(this.DinamicaFamiliar);
                 dalFicha.Alterar(this.Ficha);
-                frmP24 p24 = new frmP24();
+                var list = this.Ficha.ProblemaSono.ToList();
+                if (!list.Any())
+                    this.Ficha.AdicionarProblemaSono(new ProblemaSono());
+
+                frmP24 p24 = new frmP24(this.Ficha, this.Ficha.ProblemaSono.ToList().Last());
                 this.Dispose();
                 p24.ShowDialog();
 
             }
-            
+            else
+                MessageBox.Show("Preencha todos os campos!", "Aviso!");
+
         }
     }
 }

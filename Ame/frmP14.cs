@@ -19,7 +19,7 @@ namespace Ame
             InitializeComponent();
             this.Ficha = fichaBebeTresMeses;
             this.SobrePais = sobrePais;
-            txt_35.Text = SobrePais.Pergunta35;
+            txt_35.Text = SobrePais.Pergunta35v1;
             txt_36.Text = SobrePais.Pergunta36;
         }
 

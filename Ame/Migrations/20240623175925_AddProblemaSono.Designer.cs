@@ -4,6 +4,7 @@ using Ame.BD;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Ame.Migrations
 {
     [DbContext(typeof(BD_Context))]
-    partial class BD_ContextModelSnapshot : ModelSnapshot
+    [Migration("20240623175925_AddProblemaSono")]
+    partial class AddProblemaSono
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -68,75 +71,6 @@ namespace Ame.Migrations
                     b.HasIndex("FichaBebeTresMesesId");
 
                     b.ToTable("AlimentacaoCrianca");
-                });
-
-            modelBuilder.Entity("Ame.Modelo.AmbienteSono", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("FichaBebeTresMesesId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Pergunta74")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pergunta75")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pergunta76")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pergunta77")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pergunta78")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pergunta79")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pergunta80")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pergunta81")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pergunta82")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pergunta83")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pergunta84")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pergunta85")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pergunta86")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pergunta87")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pergunta88")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pergunta89a")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pergunta89b")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("FichaBebeTresMesesId");
-
-                    b.ToTable("AmbienteSono");
                 });
 
             modelBuilder.Entity("Ame.Modelo.DinamicaFamiliar", b =>
@@ -429,33 +363,6 @@ namespace Ame.Migrations
                     b.ToTable("SaudeDaCriancas");
                 });
 
-            modelBuilder.Entity("Ame.Modelo.SobreConsultoria", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("FichaBebeTresMesesId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Pergunta90")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pergunta91")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pergunta92")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("FichaBebeTresMesesId");
-
-                    b.ToTable("SobreConsultoria");
-                });
-
             modelBuilder.Entity("Ame.Modelo.SobrePais", b =>
                 {
                     b.Property<int>("Id")
@@ -543,15 +450,6 @@ namespace Ame.Migrations
                     b.Navigation("FichaBebeTresMeses");
                 });
 
-            modelBuilder.Entity("Ame.Modelo.AmbienteSono", b =>
-                {
-                    b.HasOne("Ame.Modelo.FichaBebeTresMeses", "FichaBebeTresMeses")
-                        .WithMany("AmbienteSono")
-                        .HasForeignKey("FichaBebeTresMesesId");
-
-                    b.Navigation("FichaBebeTresMeses");
-                });
-
             modelBuilder.Entity("Ame.Modelo.DinamicaFamiliar", b =>
                 {
                     b.HasOne("Ame.Modelo.FichaBebeTresMeses", "FichaBebeTresMeses")
@@ -588,15 +486,6 @@ namespace Ame.Migrations
                     b.Navigation("FichaBebeTresMeses");
                 });
 
-            modelBuilder.Entity("Ame.Modelo.SobreConsultoria", b =>
-                {
-                    b.HasOne("Ame.Modelo.FichaBebeTresMeses", "FichaBebeTresMeses")
-                        .WithMany("SobreConsultoria")
-                        .HasForeignKey("FichaBebeTresMesesId");
-
-                    b.Navigation("FichaBebeTresMeses");
-                });
-
             modelBuilder.Entity("Ame.Modelo.SobrePais", b =>
                 {
                     b.HasOne("Ame.Modelo.FichaBebeTresMeses", "FichaBebeTresMeses")
@@ -619,8 +508,6 @@ namespace Ame.Migrations
                 {
                     b.Navigation("AlimentacaoCrianca");
 
-                    b.Navigation("AmbienteSono");
-
                     b.Navigation("DinamicaFamiliar");
 
                     b.Navigation("NivelAtividade");
@@ -628,8 +515,6 @@ namespace Ame.Migrations
                     b.Navigation("ProblemaSono");
 
                     b.Navigation("SaudeCrianca");
-
-                    b.Navigation("SobreConsultoria");
 
                     b.Navigation("SobrePais");
 
