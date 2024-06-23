@@ -1,14 +1,6 @@
 ﻿using Ame.BD;
 using Ame.Modelo;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+
 
 namespace Ame
 {
@@ -37,14 +29,12 @@ namespace Ame
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var context = new BD_Context();
-            var dal = new DAL<SaudeDaCrianca>(context);
+            
             if (!Consulta.Consultar(new List<string>(){txb_congestao.Text, txb_alergia.Text, txb_Intestino.Text}))
             {
                 this.SaudeDaCrianca.Pergunta9 = txb_alergia.Text;
                 this.SaudeDaCrianca.Pergunta10 = txb_Intestino.Text;
                 this.SaudeDaCrianca.Pergunta11 = txb_congestao.Text;
-                dal.Alterar(this.SaudeDaCrianca);
                 frmP6 p6 = new frmP6(this.Ficha, this.SaudeDaCrianca);
                 this.Dispose();
                 p6.ShowDialog(); 

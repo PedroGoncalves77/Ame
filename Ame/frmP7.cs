@@ -1,14 +1,6 @@
 ﻿using Ame.BD;
 using Ame.Modelo;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+
 
 namespace Ame
 {
@@ -38,13 +30,11 @@ namespace Ame
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using var context = new BD_Context();
-            var dalFicha = new DAL<NivelDeAtividade>(context);
+            
             if(!Consulta.Consultar(new List<string>() {txb_exposicaoLuz.Text, txb_bebeAtivo.Text }))
             {
             NivelDeAtividade.Pergunta15 = txb_bebeAtivo.Text;
             NivelDeAtividade.Pergunta14 = txb_exposicaoLuz.Text;
-            dalFicha.Alterar(this.NivelDeAtividade);
             frmP8 p8 = new frmP8(this.Ficha, this.NivelDeAtividade);
             this.Dispose();
             p8.ShowDialog();

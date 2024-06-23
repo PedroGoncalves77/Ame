@@ -1,14 +1,6 @@
 ﻿using Ame.BD;
 using Ame.Modelo;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+
 
 namespace Ame
 {
@@ -43,14 +35,11 @@ namespace Ame
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var context = new BD_Context();
-            var dal = new DAL<NivelDeAtividade>(context);
             if (!Consulta.Consultar(new List<string>() { txt_16.Text, this.NivelDeAtividade.Pergunta17!, txt_18.Text, txt_19.Text }))
             {
                 this.NivelDeAtividade.Pergunta16 = txt_16.Text;
                 this.NivelDeAtividade.Pergunta18 = txt_18.Text;
                 this.NivelDeAtividade.Pergunta19 = txt_19.Text;
-                dal.Alterar(this.NivelDeAtividade);
                 frmP9 p9 = new frmP9(this.Ficha, this.NivelDeAtividade);
                 this.Dispose();
                 p9.ShowDialog();

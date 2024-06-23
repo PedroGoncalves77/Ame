@@ -1,13 +1,5 @@
 ﻿using Ame.Modelo;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+
 
 namespace Ame
 {
@@ -43,7 +35,7 @@ namespace Ame
 
         private void bt_proximo_Click(object sender, EventArgs e)
         {
-            if (Consulta.Consultar(new List<string>() { txt_85.Text, txt_86.Text, this.AmbienteSono.Pergunta83!, this.AmbienteSono.Pergunta84! }))
+            if (!Consulta.Consultar(new List<string>() { txt_85.Text, txt_86.Text, this.AmbienteSono.Pergunta83!, this.AmbienteSono.Pergunta84! }))
             {
                 this.AmbienteSono.Pergunta85 = txt_85.Text;
                 this.AmbienteSono.Pergunta86 = txt_86.Text;

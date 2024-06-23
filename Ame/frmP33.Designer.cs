@@ -45,7 +45,7 @@ namespace Ame
             // 
             // txt_92
             // 
-            txt_92.Enabled = false;
+            txt_92.Enabled = true;
             txt_92.Location = new Point(20, 142);
             txt_92.Multiline = true;
             txt_92.Name = "txt_92";

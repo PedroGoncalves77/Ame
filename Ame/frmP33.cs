@@ -47,6 +47,8 @@ namespace Ame
                 dalFicha.Alterar(this.Ficha);
                 this.Dispose();
             }
+            else
+                MessageBox.Show("Preencha todos os campos!", "Aviso!");
         }
 
         private void rbt_sim90_CheckedChanged(object sender, EventArgs e)

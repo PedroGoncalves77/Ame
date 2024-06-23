@@ -1,14 +1,6 @@
 ﻿using Ame.BD;
 using Ame.Modelo;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+
 
 namespace Ame
 {
@@ -48,7 +40,7 @@ namespace Ame
                 if (!list.Any())
                 this.Ficha.AdicionarNivelAtividade(new NivelDeAtividade());
                 
-                frmP7 p7 = new frmP7(this.Ficha,Ficha.NivelAtividade.ToList().First());
+                frmP7 p7 = new frmP7(this.Ficha,Ficha.NivelAtividade.ToList().Last());
                 this.Dispose();
                 p7.ShowDialog();
             }

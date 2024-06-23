@@ -1,14 +1,6 @@
 ﻿using Ame.BD;
 using Ame.Modelo;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+
 
 namespace Ame
 {
@@ -58,7 +50,9 @@ namespace Ame
                 this.Dispose();
                 p25.ShowDialog();
             }
-            
+            else
+                MessageBox.Show("Preencha todos os campos!", "Aviso!");
+
         }
 
         private void rbt_sim61_CheckedChanged(object sender, EventArgs e)

@@ -1,14 +1,5 @@
 ﻿using Ame.BD;
 using Ame.Modelo;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Ame
 {
@@ -35,13 +26,11 @@ namespace Ame
 
         private void bt_proximo_Click(object sender, EventArgs e)
         {
-            using var context = new BD_Context();
-            var dal = new DAL<SobrePais>(context);
+            
             if (!Consulta.Consultar(new List<string>() { txt_37.Text, txt_38.Text }))
             {
                 this.SobrePais.Pergunta37 = txt_37.Text;
                 this.SobrePais.Pergunta38 = txt_38.Text;
-                dal.Alterar(this.SobrePais);
                 frmP16 p16 = new frmP16(this.Ficha, this.SobrePais);
                 this.Dispose();
                 p16.ShowDialog();

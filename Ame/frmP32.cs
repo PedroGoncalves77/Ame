@@ -1,14 +1,6 @@
 ﻿using Ame.BD;
 using Ame.Modelo;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+
 
 namespace Ame
 {
@@ -47,7 +39,7 @@ namespace Ame
             using var context = new BD_Context();
             var dal = new DAL<AmbienteSono>(context);
             var dalFicha = new DAL<FichaBebeTresMeses>(context);
-            if (Consulta.Consultar(new List<string>() {txt_89a.Text, txt_89b.Text, this.AmbienteSono.Pergunta87!, this.AmbienteSono.Pergunta88! }))
+            if (!Consulta.Consultar(new List<string>() {txt_89a.Text, txt_89b.Text, this.AmbienteSono.Pergunta87!, this.AmbienteSono.Pergunta88! }))
             {
                 this.AmbienteSono.Pergunta89a = txt_89a.Text;
                 this.AmbienteSono.Pergunta89b = txt_89b.Text;

@@ -70,7 +70,7 @@ namespace Ame
             // 
             // txt_85
             // 
-            txt_85.Enabled = false;
+            txt_85.Enabled = true;
             txt_85.Location = new Point(24, 134);
             txt_85.Multiline = true;
             txt_85.Name = "txt_85";
@@ -151,7 +151,7 @@ namespace Ame
             // 
             // txt_86
             // 
-            txt_86.Enabled = false;
+            txt_86.Enabled = true;
             txt_86.Location = new Point(23, 259);
             txt_86.Multiline = true;
             txt_86.Name = "txt_86";

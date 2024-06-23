@@ -1,14 +1,6 @@
 ﻿using Ame.BD;
 using Ame.Modelo;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+
 
 namespace Ame
 {
@@ -64,7 +56,7 @@ namespace Ame
                 if (!list.Any())
                     this.Ficha.AdicionarTemperamentoCrianaca(new TemperamentoCrianca());
 
-                frm12 p12 = new frm12(this.Ficha, Ficha.TemperamentoCrianca.ToList().First());
+                frm12 p12 = new frm12(this.Ficha, Ficha.TemperamentoCrianca.ToList().Last());
                 this.Dispose();
                 p12.ShowDialog();
             }
