@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frm12
     {
@@ -36,7 +38,7 @@
             rbt_sim32 = new RadioButton();
             lbl_32 = new Label();
             lbl_32a = new Label();
-            txb_32 = new TextBox();
+            txt_32 = new TextBox();
             lbl_33a = new Label();
             txt_33 = new TextBox();
             rbt_nao33 = new RadioButton();
@@ -123,14 +125,14 @@
             lbl_32a.TabIndex = 77;
             lbl_32a.Text = "Descreva:";
             // 
-            // txb_32
+            // txt_32
             // 
-            txb_32.Enabled = false;
-            txb_32.Location = new Point(11, 177);
-            txb_32.Multiline = true;
-            txb_32.Name = "txb_32";
-            txb_32.Size = new Size(736, 85);
-            txb_32.TabIndex = 76;
+            txt_32.Enabled = false;
+            txt_32.Location = new Point(11, 177);
+            txt_32.Multiline = true;
+            txt_32.Name = "txt_32";
+            txt_32.Size = new Size(736, 85);
+            txt_32.TabIndex = 76;
             // 
             // lbl_33a
             // 
@@ -194,7 +196,7 @@
             Controls.Add(rbt_sim33);
             Controls.Add(lbl_33);
             Controls.Add(lbl_32a);
-            Controls.Add(txb_32);
+            Controls.Add(txt_32);
             Controls.Add(rbt_nao32);
             Controls.Add(rbt_sim32);
             Controls.Add(lbl_32);
@@ -217,11 +219,13 @@
         private RadioButton rbt_sim32;
         private Label lbl_32;
         private Label lbl_32a;
-        private TextBox txb_32;
+        private TextBox txt_32;
         private Label lbl_33a;
         private TextBox txt_33;
         private RadioButton rbt_nao33;
         private RadioButton rbt_sim33;
         private Label lbl_33;
+        private FichaBebeTresMeses Ficha { get; set; }
+        private TemperamentoCrianca TemperamentoCrianca { get; set; }
     }
 }

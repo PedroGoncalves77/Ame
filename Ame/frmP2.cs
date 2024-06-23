@@ -40,7 +40,7 @@ namespace Ame
         private void button1_Click(object sender, EventArgs e)
         {
 
-            var context = new BD_Context();
+            using var context = new BD_Context();
             var dal = new DAL<SaudeDaCrianca>(context);
             if (!Consulta.Consultar(new List<string>() { txt_3.Text, txt_4.Text }))
             {   

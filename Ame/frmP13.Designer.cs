@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP13
     {
@@ -43,6 +45,7 @@
             txtBox3.Name = "txtBox3";
             txtBox3.Size = new Size(697, 126);
             txtBox3.TabIndex = 17;
+            txtBox3.TextChanged += txtBox3_TextChanged;
             // 
             // bt_anterior
             // 
@@ -73,6 +76,7 @@
             txtBox4.Name = "txtBox4";
             txtBox4.Size = new Size(697, 126);
             txtBox4.TabIndex = 14;
+            txtBox4.TextChanged += txtBox4_TextChanged;
             // 
             // lbl_35
             // 
@@ -117,5 +121,7 @@
         private TextBox txtBox4;
         private Label lbl_35;
         private Label lbl_34;
+        private FichaBebeTresMeses Ficha { get; set; }
+        private SobrePais SobrePais { get; set; }
     }
 }

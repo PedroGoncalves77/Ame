@@ -26,6 +26,8 @@ namespace Ame.Modelo
         public virtual ICollection<NivelDeAtividade> NivelAtividade { get; set; } = new List<NivelDeAtividade>();
         public virtual ICollection<AlimentacaoCrianca> AlimentacaoCrianca { get; set; } = new List<AlimentacaoCrianca>();
         public virtual ICollection<TemperamentoCrianca> TemperamentoCrianca { get; set; } = new List<TemperamentoCrianca>();
+        public virtual ICollection<SobrePais> SobrePais { get; set; } = new List<SobrePais>();
+        public virtual ICollection<DinamicaFamiliar> DinamicaFamiliar { get; set; } = new List<DinamicaFamiliar>();
         public int Id { get; set; }
         public int Contrato { get; set; }
         public DateTime Data { get; set; }
@@ -55,7 +57,14 @@ namespace Ame.Modelo
         {
             this.TemperamentoCrianca.Add(temperamentoCrianca);
         }
-
+        public void AdicionarSobrePais(SobrePais sobre)
+        {
+            this.SobrePais.Add(sobre);
+        }
+        public void AdicionarDinamica(DinamicaFamiliar dinamica)
+        {
+            this.DinamicaFamiliar.Add(dinamica);
+        }
 
 
     }

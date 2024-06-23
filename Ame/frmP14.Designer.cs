@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP14
     {
@@ -116,5 +118,7 @@
         private TextBox txt_36;
         private Label lbl_36;
         private Label lbl_35;
+        private FichaBebeTresMeses Ficha { get; set; }
+        private SobrePais SobrePais { get; set; }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP16
     {
@@ -68,7 +70,7 @@
             // 
             // txb_39
             // 
-            txb_39.Enabled = false;
+            txb_39.Enabled = true;
             txb_39.Location = new Point(34, 65);
             txb_39.Multiline = true;
             txb_39.Name = "txb_39";
@@ -152,6 +154,7 @@
             rbt_40bNao.TabStop = true;
             rbt_40bNao.Text = "Não";
             rbt_40bNao.UseVisualStyleBackColor = true;
+            rbt_40bNao.CheckedChanged += rbt_40bNao_CheckedChanged;
             // 
             // rbt_40bSim
             // 
@@ -163,6 +166,7 @@
             rbt_40bSim.TabStop = true;
             rbt_40bSim.Text = "Sim";
             rbt_40bSim.UseVisualStyleBackColor = true;
+            rbt_40bSim.CheckedChanged += rbt_40bSim_CheckedChanged;
             // 
             // frmP16
             // 
@@ -202,5 +206,7 @@
         private Label lbl_40b;
         private RadioButton rbt_40bNao;
         private RadioButton rbt_40bSim;
+        private FichaBebeTresMeses Ficha { get; set; }
+        private SobrePais SobrePais { get; set; }
     }
 }

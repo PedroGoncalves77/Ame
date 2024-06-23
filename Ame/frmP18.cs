@@ -29,9 +29,9 @@ namespace Ame
 
         private void bt_anterior_Click(object sender, EventArgs e)
         {
-            frmP17 p17 = new frmP17();
+            //frmP17 p17 = new frmP17();
             this.Dispose();
-            p17.ShowDialog();
+            //p17.ShowDialog();
         }
 
         private void bt_proximo_Click(object sender, EventArgs e)

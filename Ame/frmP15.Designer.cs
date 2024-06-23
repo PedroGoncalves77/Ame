@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP15
     {
@@ -28,7 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txb_37 = new TextBox();
+            txt_37 = new TextBox();
             bt_anterior = new Button();
             bt_proximo = new Button();
             txt_38 = new TextBox();
@@ -36,13 +38,13 @@
             lbl_38 = new Label();
             SuspendLayout();
             // 
-            // txb_37
+            // txt_37
             // 
-            txb_37.Location = new Point(34, 64);
-            txb_37.Multiline = true;
-            txb_37.Name = "txb_37";
-            txb_37.Size = new Size(697, 126);
-            txb_37.TabIndex = 29;
+            txt_37.Location = new Point(34, 64);
+            txt_37.Multiline = true;
+            txt_37.Name = "txt_37";
+            txt_37.Size = new Size(697, 126);
+            txt_37.TabIndex = 29;
             // 
             // bt_anterior
             // 
@@ -97,7 +99,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(txb_37);
+            Controls.Add(txt_37);
             Controls.Add(bt_anterior);
             Controls.Add(bt_proximo);
             Controls.Add(txt_38);
@@ -111,11 +113,13 @@
 
         #endregion
 
-        private TextBox txb_37;
+        private TextBox txt_37;
         private Button bt_anterior;
         private Button bt_proximo;
         private TextBox txt_38;
         private Label lbl_37;
         private Label lbl_38;
+        private FichaBebeTresMeses Ficha { get; set; }
+        private SobrePais SobrePais { get; set; }
     }
 }

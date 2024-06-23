@@ -40,13 +40,18 @@ namespace Ame
         {
             using var context = new BD_Context();
             var dalFicha = new DAL<NivelDeAtividade>(context);
+            if(!Consulta.Consultar(new List<string>() {txb_exposicaoLuz.Text, txb_bebeAtivo.Text }))
+            {
             NivelDeAtividade.Pergunta15 = txb_bebeAtivo.Text;
             NivelDeAtividade.Pergunta14 = txb_exposicaoLuz.Text;
             dalFicha.Alterar(this.NivelDeAtividade);
             frmP8 p8 = new frmP8(this.Ficha, this.NivelDeAtividade);
             this.Dispose();
             p8.ShowDialog();
-            
+            }
+            else
+                MessageBox.Show("Preencha todos os campos!", "Aviso!");
+
         }
 
         private void lbl_4_Click(object sender, EventArgs e)
@@ -78,7 +83,7 @@ namespace Ame
         {
             if (rbt_sim15.Checked)
             {
-                txb_exposicaoLuz.Text = txb_bebeAtivo.Text.Equals(Consulta.Empty) ? String.Empty : this.NivelDeAtividade.Pergunta15;
+                txb_bebeAtivo.Text = txb_bebeAtivo.Text.Equals(Consulta.Empty) ? String.Empty : this.NivelDeAtividade.Pergunta15;
                 txb_bebeAtivo.Enabled = true;
             }
                 

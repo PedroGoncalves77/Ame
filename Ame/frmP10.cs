@@ -24,8 +24,8 @@ namespace Ame
             txt_25.Text = AlimentacaoCrianca.Pergunta25;
             switch (AlimentacaoCrianca.Pergunta23)
             {
-                case "sim": rbt_sim22.Checked = true; break;
-                case "nao": rbt_nao22.Checked = true; break;
+                case "sim": rbt_sim23.Checked = true; break;
+                case "nao": rbt_nao23.Checked = true; break;
             }
         }
 
@@ -65,6 +65,8 @@ namespace Ame
                 this.Dispose();
                 p11.ShowDialog();
             }
+            else
+                MessageBox.Show("Preencha todos os campos!", "Aviso!");
         }
 
         private void rbt_sim22_CheckedChanged(object sender, EventArgs e)

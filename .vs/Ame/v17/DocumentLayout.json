@@ -3,43 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\frmp11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\frmp11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\bd\\bd_context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\bd\\bd_context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\frmp6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\frmp6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\frmp14.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\frmp14.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\frmp11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\frmp11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\modelo\\dinamicafamiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\modelo\\dinamicafamiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\frmp10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\frmp10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\modelo\\sobrepais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\modelo\\sobrepais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BD_AME3/True/SqlTable/dbo.AlimentacaoCrianca.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\modelo\\fichabebetresmeses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\modelo\\fichabebetresmeses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\frmp13.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\frmp13.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\frmp15.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\frmp15.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\frmp12.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\frmp12.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\frmp9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\frmp9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\frmp17.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\frmp17.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\frmp10.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\frmp10.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\frmp16.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\frmp16.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\frmp10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\frmp10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\frmp8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\frmp8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\frmp11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\frmp11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\frmp7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -48,6 +57,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\frmp5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\frmp5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\frmp8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|solutionrelative:ame\\frmp8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE17E011-6CAD-4F5D-9ACB-7693E3B0F8C4}|Ame\\Ame.csproj|c:\\users\\pedro\\source\\repos\\pedrogoncalves77\\ame\\ame\\frmp9.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,58 +74,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmP6.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP6.cs",
-              "RelativeDocumentMoniker": "Ame\\frmP6.cs",
-              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP6.cs",
-              "RelativeToolTip": "Ame\\frmP6.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAswDcAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T20:03:02.075Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmP11.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP11.cs",
-              "RelativeDocumentMoniker": "Ame\\frmP11.cs",
-              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP11.cs [Design]",
-              "RelativeToolTip": "Ame\\frmP11.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T20:48:16.561Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmP10.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP10.cs",
-              "RelativeDocumentMoniker": "Ame\\frmP10.cs",
-              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP10.cs [Design]",
-              "RelativeToolTip": "Ame\\frmP10.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T20:46:48.893Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "dbo.AlimentacaoCrianca [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BD_AME3/True/SqlTable/dbo.AlimentacaoCrianca.sql",
-              "ToolTip": "dbo.AlimentacaoCrianca [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-06-23T01:04:17.225Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -130,51 +93,60 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BD_Context.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\BD\\BD_Context.cs",
+              "RelativeDocumentMoniker": "Ame\\BD\\BD_Context.cs",
+              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\BD\\BD_Context.cs",
+              "RelativeToolTip": "Ame\\BD\\BD_Context.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBMAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T16:24:15.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FichaBebeTresMeses.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\Modelo\\FichaBebeTresMeses.cs",
+              "RelativeDocumentMoniker": "Ame\\Modelo\\FichaBebeTresMeses.cs",
+              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\Modelo\\FichaBebeTresMeses.cs",
+              "RelativeToolTip": "Ame\\Modelo\\FichaBebeTresMeses.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAA5wEEAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T16:22:29.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SobrePais.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\Modelo\\SobrePais.cs",
+              "RelativeDocumentMoniker": "Ame\\Modelo\\SobrePais.cs",
+              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\Modelo\\SobrePais.cs",
+              "RelativeToolTip": "Ame\\Modelo\\SobrePais.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T16:19:49.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DinamicaFamiliar.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\Modelo\\DinamicaFamiliar.cs",
+              "RelativeDocumentMoniker": "Ame\\Modelo\\DinamicaFamiliar.cs",
+              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\Modelo\\DinamicaFamiliar.cs",
+              "RelativeToolTip": "Ame\\Modelo\\DinamicaFamiliar.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T16:19:44.012Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmP12.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP12.cs",
-              "RelativeDocumentMoniker": "Ame\\frmP12.cs",
-              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP12.cs",
-              "RelativeToolTip": "Ame\\frmP12.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAewCMAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T00:58:04.01Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmP10.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP10.Designer.cs",
-              "RelativeDocumentMoniker": "Ame\\frmP10.Designer.cs",
-              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP10.Designer.cs",
-              "RelativeToolTip": "Ame\\frmP10.Designer.cs",
-              "ViewState": "AQIAADMBAAAAAAAAAAAgwDsBAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T00:06:39.369Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmP9.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP9.cs",
-              "RelativeDocumentMoniker": "Ame\\frmP9.cs",
-              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP9.cs",
-              "RelativeToolTip": "Ame\\frmP9.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAUwDkAAABkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T20:25:11.07Z",
-              "EditorCaption": ""
             }
           ]
         }
@@ -195,82 +167,160 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "frmP12.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP12.cs",
+              "RelativeDocumentMoniker": "Ame\\frmP12.cs",
+              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP12.cs",
+              "RelativeToolTip": "Ame\\frmP12.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T16:07:13.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmP17.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP17.cs",
+              "RelativeDocumentMoniker": "Ame\\frmP17.cs",
+              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP17.cs",
+              "RelativeToolTip": "Ame\\frmP17.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T15:24:11.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmP16.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP16.cs",
+              "RelativeDocumentMoniker": "Ame\\frmP16.cs",
+              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP16.cs",
+              "RelativeToolTip": "Ame\\frmP16.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwDoAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T15:11:03.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmP15.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP15.cs",
+              "RelativeDocumentMoniker": "Ame\\frmP15.cs",
+              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP15.cs",
+              "RelativeToolTip": "Ame\\frmP15.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwA4AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T14:59:02.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmP14.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP14.cs",
+              "RelativeDocumentMoniker": "Ame\\frmP14.cs",
+              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP14.cs",
+              "RelativeToolTip": "Ame\\frmP14.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACsAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T14:49:34.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmP13.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP13.cs",
+              "RelativeDocumentMoniker": "Ame\\frmP13.cs",
+              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP13.cs",
+              "RelativeToolTip": "Ame\\frmP13.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAC4AAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T14:36:12.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "frmP11.cs",
               "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP11.cs",
               "RelativeDocumentMoniker": "Ame\\frmP11.cs",
               "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP11.cs",
               "RelativeToolTip": "Ame\\frmP11.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwEMAAABHAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAgwEIAAABeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-23T00:37:56.874Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "frmP7.cs",
               "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP7.cs",
               "RelativeDocumentMoniker": "Ame\\frmP7.cs",
               "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP7.cs",
               "RelativeToolTip": "Ame\\frmP7.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwCAAAABUAAAA",
+              "ViewState": "AQIAADgAAAAAAAAAAAA9wFcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-22T20:03:34.96Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "frmP5.cs",
               "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP5.cs",
               "RelativeDocumentMoniker": "Ame\\frmP5.cs",
               "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP5.cs",
               "RelativeToolTip": "Ame\\frmP5.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAWwDIAAAANAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAtwCAAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-22T20:13:57.121Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "frmP8.cs",
               "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP8.cs",
               "RelativeDocumentMoniker": "Ame\\frmP8.cs",
               "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP8.cs",
               "RelativeToolTip": "Ame\\frmP8.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwC4AAAAjAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowFgAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-22T20:06:38.45Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "frmP9.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP9.Designer.cs",
               "RelativeDocumentMoniker": "Ame\\frmP9.Designer.cs",
               "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP9.Designer.cs",
               "RelativeToolTip": "Ame\\frmP9.Designer.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAQAAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIwAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-22T20:24:18.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "frmP10.cs",
               "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP10.cs",
               "RelativeDocumentMoniker": "Ame\\frmP10.cs",
               "ToolTip": "C:\\Users\\Pedro\\source\\repos\\PedroGoncalves77\\Ame\\Ame\\frmP10.cs",
               "RelativeToolTip": "Ame\\frmP10.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAgwD8AAAAnAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-23T00:05:28.896Z",
               "EditorCaption": ""

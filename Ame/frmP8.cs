@@ -73,7 +73,7 @@ namespace Ame
                 this.NivelDeAtividade.Pergunta17 = "sim";
                 txt_19.Text = txt_19.Text.Equals(Consulta.Empty) ? String.Empty : this.NivelDeAtividade.Pergunta19;
                 txt_19.Enabled = true;
-                txt_18.Text = txt_19.Text.Equals(Consulta.Empty) ? String.Empty : this.NivelDeAtividade.Pergunta18;
+                txt_18.Text = txt_18.Text.Equals(Consulta.Empty) ? String.Empty : this.NivelDeAtividade.Pergunta18;
                 txt_18.Enabled = true;
             }
         }

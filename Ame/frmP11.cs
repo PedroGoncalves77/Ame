@@ -60,7 +60,11 @@ namespace Ame
                 this.AlimentacaoCrianca.Pergunta30 = txt_30.Text;
                 dalAlimentacao.Alterar(this.AlimentacaoCrianca);
                 dal.Alterar(this.Ficha);
-                frm12 p12 = new frm12();
+                var list = this.Ficha.TemperamentoCrianca.ToList();
+                if (!list.Any())
+                    this.Ficha.AdicionarTemperamentoCrianaca(new TemperamentoCrianca());
+
+                frm12 p12 = new frm12(this.Ficha, Ficha.TemperamentoCrianca.ToList().First());
                 this.Dispose();
                 p12.ShowDialog();
             }
