@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP21
     {
@@ -28,54 +30,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            rbt_nao47 = new RadioButton();
-            rbt_sim47 = new RadioButton();
-            txt_47a = new TextBox();
+            rbt_nao52 = new RadioButton();
+            rbt_sim52 = new RadioButton();
+            txt_51 = new TextBox();
             lbl_47 = new Label();
             bt_anterior = new Button();
             bt_proximo = new Button();
             lbl_47b = new Label();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
+            rbt_nao51 = new RadioButton();
+            rbt_sim51 = new RadioButton();
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txt_52 = new TextBox();
+            txt_53 = new TextBox();
             label3 = new Label();
-            radioButton3 = new RadioButton();
-            radioButton4 = new RadioButton();
+            rbt_nao53 = new RadioButton();
+            rbt_sim53 = new RadioButton();
             label4 = new Label();
             SuspendLayout();
             // 
-            // rbt_nao47
+            // rbt_nao52
             // 
-            rbt_nao47.AutoSize = true;
-            rbt_nao47.Location = new Point(181, 139);
-            rbt_nao47.Name = "rbt_nao47";
-            rbt_nao47.Size = new Size(47, 19);
-            rbt_nao47.TabIndex = 71;
-            rbt_nao47.TabStop = true;
-            rbt_nao47.Text = "Não";
-            rbt_nao47.UseVisualStyleBackColor = true;
+            rbt_nao52.AutoSize = true;
+            rbt_nao52.Location = new Point(181, 139);
+            rbt_nao52.Name = "rbt_nao52";
+            rbt_nao52.Size = new Size(47, 19);
+            rbt_nao52.TabIndex = 71;
+            rbt_nao52.TabStop = true;
+            rbt_nao52.Text = "Não";
+            rbt_nao52.UseVisualStyleBackColor = true;
+            rbt_nao52.CheckedChanged += rbt_nao52_CheckedChanged;
             // 
-            // rbt_sim47
+            // rbt_sim52
             // 
-            rbt_sim47.AutoSize = true;
-            rbt_sim47.Location = new Point(130, 139);
-            rbt_sim47.Name = "rbt_sim47";
-            rbt_sim47.Size = new Size(45, 19);
-            rbt_sim47.TabIndex = 70;
-            rbt_sim47.TabStop = true;
-            rbt_sim47.Text = "Sim";
-            rbt_sim47.UseVisualStyleBackColor = true;
+            rbt_sim52.AutoSize = true;
+            rbt_sim52.Location = new Point(130, 139);
+            rbt_sim52.Name = "rbt_sim52";
+            rbt_sim52.Size = new Size(45, 19);
+            rbt_sim52.TabIndex = 70;
+            rbt_sim52.TabStop = true;
+            rbt_sim52.Text = "Sim";
+            rbt_sim52.UseVisualStyleBackColor = true;
+            rbt_sim52.CheckedChanged += rbt_sim52_CheckedChanged;
             // 
-            // txt_47a
+            // txt_51
             // 
-            txt_47a.Location = new Point(12, 62);
-            txt_47a.Multiline = true;
-            txt_47a.Name = "txt_47a";
-            txt_47a.Size = new Size(755, 68);
-            txt_47a.TabIndex = 64;
+            txt_51.Location = new Point(12, 62);
+            txt_51.Multiline = true;
+            txt_51.Name = "txt_51";
+            txt_51.Size = new Size(755, 68);
+            txt_51.TabIndex = 64;
+            txt_51.Enabled = false;
             // 
             // lbl_47
             // 
@@ -115,27 +120,29 @@
             lbl_47b.TabIndex = 66;
             lbl_47b.Text = "52- Vai a escolinha?";
             // 
-            // radioButton1
+            // rbt_nao51
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(154, 15);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(47, 19);
-            radioButton1.TabIndex = 73;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Não";
-            radioButton1.UseVisualStyleBackColor = true;
+            rbt_nao51.AutoSize = true;
+            rbt_nao51.Location = new Point(154, 15);
+            rbt_nao51.Name = "rbt_nao51";
+            rbt_nao51.Size = new Size(47, 19);
+            rbt_nao51.TabIndex = 73;
+            rbt_nao51.TabStop = true;
+            rbt_nao51.Text = "Não";
+            rbt_nao51.UseVisualStyleBackColor = true;
+            rbt_nao51.CheckedChanged += rbt_nao51_CheckedChanged;
             // 
-            // radioButton2
+            // rbt_sim51
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(103, 15);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(45, 19);
-            radioButton2.TabIndex = 72;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Sim";
-            radioButton2.UseVisualStyleBackColor = true;
+            rbt_sim51.AutoSize = true;
+            rbt_sim51.Location = new Point(103, 15);
+            rbt_sim51.Name = "rbt_sim51";
+            rbt_sim51.Size = new Size(45, 19);
+            rbt_sim51.TabIndex = 72;
+            rbt_sim51.TabStop = true;
+            rbt_sim51.Text = "Sim";
+            rbt_sim51.UseVisualStyleBackColor = true;
+            rbt_sim51.CheckedChanged += rbt_sim51_CheckedChanged;
             // 
             // label1
             // 
@@ -153,21 +160,23 @@
             label2.TabIndex = 75;
             label2.Text = "Quais horários?";
             // 
-            // textBox1
+            // txt_52
             // 
-            textBox1.Location = new Point(12, 188);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(755, 70);
-            textBox1.TabIndex = 76;
+            txt_52.Location = new Point(12, 188);
+            txt_52.Multiline = true;
+            txt_52.Name = "txt_52";
+            txt_52.Size = new Size(755, 70);
+            txt_52.TabIndex = 76;
+            txt_52.Enabled = false;
             // 
-            // textBox2
+            // txt_53
             // 
-            textBox2.Location = new Point(12, 320);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(755, 70);
-            textBox2.TabIndex = 81;
+            txt_53.Location = new Point(12, 320);
+            txt_53.Multiline = true;
+            txt_53.Name = "txt_53";
+            txt_53.Size = new Size(755, 70);
+            txt_53.TabIndex = 81;
+            txt_53.Enabled = false;
             // 
             // label3
             // 
@@ -177,27 +186,29 @@
             label3.TabIndex = 80;
             label3.Text = "Qual idade?";
             // 
-            // radioButton3
+            // rbt_nao53
             // 
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(172, 271);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(47, 19);
-            radioButton3.TabIndex = 79;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "Não";
-            radioButton3.UseVisualStyleBackColor = true;
+            rbt_nao53.AutoSize = true;
+            rbt_nao53.Location = new Point(172, 271);
+            rbt_nao53.Name = "rbt_nao53";
+            rbt_nao53.Size = new Size(47, 19);
+            rbt_nao53.TabIndex = 79;
+            rbt_nao53.TabStop = true;
+            rbt_nao53.Text = "Não";
+            rbt_nao53.UseVisualStyleBackColor = true;
+            rbt_nao53.CheckedChanged += rbt_nao53_CheckedChanged;
             // 
-            // radioButton4
+            // rbt_sim53
             // 
-            radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(121, 271);
-            radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(45, 19);
-            radioButton4.TabIndex = 78;
-            radioButton4.TabStop = true;
-            radioButton4.Text = "Sim";
-            radioButton4.UseVisualStyleBackColor = true;
+            rbt_sim53.AutoSize = true;
+            rbt_sim53.Location = new Point(121, 271);
+            rbt_sim53.Name = "rbt_sim53";
+            rbt_sim53.Size = new Size(45, 19);
+            rbt_sim53.TabIndex = 78;
+            rbt_sim53.TabStop = true;
+            rbt_sim53.Text = "Sim";
+            rbt_sim53.UseVisualStyleBackColor = true;
+            rbt_sim53.CheckedChanged += rbt_sim53_CheckedChanged;
             // 
             // label4
             // 
@@ -212,20 +223,20 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox2);
+            Controls.Add(txt_53);
             Controls.Add(label3);
-            Controls.Add(radioButton3);
-            Controls.Add(radioButton4);
+            Controls.Add(rbt_nao53);
+            Controls.Add(rbt_sim53);
             Controls.Add(label4);
-            Controls.Add(textBox1);
+            Controls.Add(txt_52);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(radioButton1);
-            Controls.Add(radioButton2);
-            Controls.Add(rbt_nao47);
-            Controls.Add(rbt_sim47);
+            Controls.Add(rbt_nao51);
+            Controls.Add(rbt_sim51);
+            Controls.Add(rbt_nao52);
+            Controls.Add(rbt_sim52);
             Controls.Add(lbl_47b);
-            Controls.Add(txt_47a);
+            Controls.Add(txt_51);
             Controls.Add(lbl_47);
             Controls.Add(bt_anterior);
             Controls.Add(bt_proximo);
@@ -237,22 +248,24 @@
 
         #endregion
 
-        private RadioButton rbt_nao47;
-        private RadioButton rbt_sim47;
-        private TextBox txt_47a;
+        private RadioButton rbt_nao52;
+        private RadioButton rbt_sim52;
+        private TextBox txt_51;
         private Label lbl_47;
         private Button bt_anterior;
         private Button bt_proximo;
         private Label lbl_47b;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
+        private RadioButton rbt_nao51;
+        private RadioButton rbt_sim51;
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txt_52;
+        private TextBox txt_53;
         private Label label3;
-        private RadioButton radioButton3;
-        private RadioButton radioButton4;
+        private RadioButton rbt_nao53;
+        private RadioButton rbt_sim53;
         private Label label4;
+        private FichaBebeTresMeses Ficha { get; set; }
+        private DinamicaFamiliar DinamicaFamiliar { get; set; }
     }
 }

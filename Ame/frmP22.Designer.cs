@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP22
     {
@@ -30,8 +32,8 @@
         {
             txt_56 = new TextBox();
             lbl_56a = new Label();
-            rbt_sim56 = new RadioButton();
             rbt_nao56 = new RadioButton();
+            rbt_sim56 = new RadioButton();
             lbl_56 = new Label();
             txt_55 = new TextBox();
             lbl_55 = new Label();
@@ -48,6 +50,7 @@
             txt_56.Name = "txt_56";
             txt_56.Size = new Size(755, 84);
             txt_56.TabIndex = 98;
+            txt_56.Enabled = false;
             // 
             // lbl_56a
             // 
@@ -58,27 +61,29 @@
             lbl_56a.TabIndex = 97;
             lbl_56a.Text = "Descreva como é essa ajuda, dias da semana, horários.";
             // 
-            // rbt_sim56
-            // 
-            rbt_sim56.AutoSize = true;
-            rbt_sim56.Location = new Point(391, 274);
-            rbt_sim56.Name = "rbt_sim56";
-            rbt_sim56.Size = new Size(47, 19);
-            rbt_sim56.TabIndex = 96;
-            rbt_sim56.TabStop = true;
-            rbt_sim56.Text = "Não";
-            rbt_sim56.UseVisualStyleBackColor = true;
-            // 
             // rbt_nao56
             // 
             rbt_nao56.AutoSize = true;
-            rbt_nao56.Location = new Point(340, 274);
+            rbt_nao56.Location = new Point(391, 274);
             rbt_nao56.Name = "rbt_nao56";
-            rbt_nao56.Size = new Size(45, 19);
-            rbt_nao56.TabIndex = 95;
+            rbt_nao56.Size = new Size(47, 19);
+            rbt_nao56.TabIndex = 96;
             rbt_nao56.TabStop = true;
-            rbt_nao56.Text = "Sim";
+            rbt_nao56.Text = "Não";
             rbt_nao56.UseVisualStyleBackColor = true;
+            rbt_nao56.CheckedChanged += rbt_nao56_CheckedChanged;
+            // 
+            // rbt_sim56
+            // 
+            rbt_sim56.AutoSize = true;
+            rbt_sim56.Location = new Point(340, 274);
+            rbt_sim56.Name = "rbt_sim56";
+            rbt_sim56.Size = new Size(45, 19);
+            rbt_sim56.TabIndex = 95;
+            rbt_sim56.TabStop = true;
+            rbt_sim56.Text = "Sim";
+            rbt_sim56.UseVisualStyleBackColor = true;
+            rbt_sim56.CheckedChanged += rbt_sim56_CheckedChanged;
             // 
             // lbl_56
             // 
@@ -152,8 +157,8 @@
             ClientSize = new Size(800, 450);
             Controls.Add(txt_56);
             Controls.Add(lbl_56a);
-            Controls.Add(rbt_sim56);
             Controls.Add(rbt_nao56);
+            Controls.Add(rbt_sim56);
             Controls.Add(lbl_56);
             Controls.Add(txt_55);
             Controls.Add(lbl_55);
@@ -171,8 +176,8 @@
 
         private TextBox txt_56;
         private Label lbl_56a;
-        private RadioButton rbt_sim56;
         private RadioButton rbt_nao56;
+        private RadioButton rbt_sim56;
         private Label lbl_56;
         private TextBox txt_55;
         private Label lbl_55;
@@ -180,5 +185,7 @@
         private Label lbl_54;
         private Button bt_anterior;
         private Button bt_proximo;
+        private FichaBebeTresMeses Ficha { get; set; }
+        private DinamicaFamiliar DinamicaFamiliar { get; set; }
     }
 }

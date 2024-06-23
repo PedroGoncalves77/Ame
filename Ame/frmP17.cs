@@ -39,11 +39,21 @@ namespace Ame
             var dal = new DAL<SobrePais>(context);
             if (!Consulta.Consultar(new List<string>() { txt_42.Text, txb_41.Text }))
             {
+                this.SobrePais.Pergunta41 = txb_41.Text;
+                this.SobrePais.Pergunta42 = txt_42.Text;
+                dal.Alterar(this.SobrePais);
+                dalFicha.Alterar(this.Ficha);
+                var list = this.Ficha.DinamicaFamiliar.ToList();
+                if (!list.Any())
+                    this.Ficha.AdicionarDinamica(new DinamicaFamiliar());
 
+                frmP18 p18 = new frmP18(this.Ficha,this.Ficha.DinamicaFamiliar.ToList().Last());
+                this.Dispose();
+                p18.ShowDialog();
             }
-            frmP18 p18 = new frmP18();
-            this.Dispose();
-            p18.ShowDialog();
+            else
+                MessageBox.Show("Preencha todos os campos!", "Aviso!");
+
         }
     }
 }

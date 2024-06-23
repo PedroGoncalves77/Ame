@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmP20
     {
@@ -110,6 +112,7 @@
             rbt_nao48.TabStop = true;
             rbt_nao48.Text = "Não";
             rbt_nao48.UseVisualStyleBackColor = true;
+            rbt_nao48.CheckedChanged += rbt_nao48_CheckedChanged;
             // 
             // rbt_sim48
             // 
@@ -121,6 +124,7 @@
             rbt_sim48.TabStop = true;
             rbt_sim48.Text = "Sim";
             rbt_sim48.UseVisualStyleBackColor = true;
+            rbt_sim48.CheckedChanged += rbt_sim48_CheckedChanged;
             // 
             // txt_48
             // 
@@ -129,6 +133,7 @@
             txt_48.Name = "txt_48";
             txt_48.Size = new Size(733, 72);
             txt_48.TabIndex = 75;
+            txt_48.Enabled = false;
             // 
             // txt_49
             // 
@@ -191,5 +196,7 @@
         private TextBox txt_48;
         private TextBox txt_49;
         private Label lbl_50;
+        private FichaBebeTresMeses Ficha { get; set; }
+        private DinamicaFamiliar DinamicaFamiliar { get; set; }
     }
 }
