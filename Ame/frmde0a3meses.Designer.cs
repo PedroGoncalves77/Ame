@@ -1,4 +1,6 @@
-﻿namespace Ame
+﻿using Ame.Modelo;
+
+namespace Ame
 {
     partial class frmde0a3meses
     {
@@ -292,5 +294,6 @@
         private Button bt_iniciarForm;
         private MonthCalendar mtc_Nascimento;
         private MonthCalendar mtc_Data;
+        private FichaBebeTresMeses Ficha { get; set; }
     }
 }
